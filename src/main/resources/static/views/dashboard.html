@@ -1,0 +1,72 @@
+<br/>
+<br/>
+<br>
+<br>
+<br>
+<br>
+<div class="row">
+	<div class="col">
+		<div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+			<div class="card-header">
+				<h4>Formations</h4>
+			</div>
+			<div class="card-body">
+					<a ui-sref="formation">
+							
+				<h5 class="card-title" > Formation</h5></a>
+				</h5>
+				<p class="card-text"> <b>{{formations.length}}</b> 
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="col">
+		<div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+			<div class="card-header">
+				<h4> Enseignants</h4>
+			</div>
+			<div class="card-body">
+					<a ui-sref="enseignant">
+							
+				<h5 class="card-title"> Enseignant
+				</h5></a>
+				<p class="card-text"> {{enseignants.length}}
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<br>
+<br>
+<br>
+<div class="row">
+	<div class="col">
+		<div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+			<div class="card-header">
+					
+				<h5>Candidats</h5>
+			</div>
+			<div class="card-body">
+					<a ui-sref="candidat">
+				<h5 class="card-title"> candidats
+				</h5></a>
+				<p class="card-text"> {{candidats.length}}
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="col">
+		<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+			<div class="card-header">
+				<h4>Promotions</h4>
+			</div>
+			<div class="card-body">
+					<a ui-sref="promotion">
+				<h5 class="card-title"> promotions
+				</h5></a>
+				<p class="card-text"> {{promotions.length}}
+				</p>
+			</div>
+		</div>
+	</div>
+</div>

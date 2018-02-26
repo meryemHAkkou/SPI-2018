@@ -1,0 +1,31 @@
+li,ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#navigation .navi a {
+    font-size: 14px;
+    padding: 20px;
+    text-align: center;
+}
+#navigation .navi i {
+    margin-right: 0px;
+}
+#navigation .navi a:hover,
+#navigation .navi .active a {
+    background: #38383f none repeat scroll 0 0;
+    border-left: none;
+    display: block;
+    padding-left: px;
+color: rgb(253, 252, 252);
+}
+
+.c{
+    position: fixed;
+    height: 100%;
+    
+}
+.co{
+    margin-left: 20%;
+
+}

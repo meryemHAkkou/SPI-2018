@@ -1,0 +1,68 @@
+<br>
+<br>
+<br>
+<div class="card bg-light mb-3">
+    <div class="card-header"></div>
+    <div class="card-body">
+
+        <p class="card-text">
+            <div class="row">
+                <div class="col-1">
+                </div>
+                <div class="col-8">
+                    <form ng-submit="update()">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="noEnseignant">Numéro Enseignant</label>
+                                <input ng-model="enseignant.noEnseignant" type="text" class="form-control" disabled id="noEnseignant" placeholder="Numéro Enseignant">
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="nomEnseignant">Nom Enseignant</label>
+                                <input ng-model="enseignant.nom" type="text" class="form-control" id="nomFormation" placeholder="Nom Enseignant">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="PrenomEnseignant">Prenom Enseignant</label>
+                                <input ng-model="enseignant.prenom" type="text" class="form-control" id="PrenomEnseignant" placeholder="Prenom Enseignant">
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="SEXE">SEXE</label>
+                                <input ng-model="enseignant.sexe" type="text" class="form-control" id="SEXE" placeholder="SEXE">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="TYPE">TYPE</label>
+                                <input ng-model="enseignant.type" type="text" class="form-control" id="TYPE" placeholder="TYPE">
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="Adresse">Adresse</label>
+                                <input ng-model="enseignant.adresse" type="text" class="form-control" id="Adresse" placeholder="Adresse">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="Ville">Ville</label>
+                                <input ng-model="enseignant.ville" type="text" class="form-control" id="Ville" placeholder=" Ville">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="Pays">Pays</label>
+                                    <input ng-model="enseignant.pays" type="text" class="form-control" id="Pays" placeholder=" Pays">
+                                </div>
+                            </div>
+                        <button type="submit" class="btn btn-primary">Modifier</button>
+                        <button  ng-click="annuler()" type="submit" class="btn btn-primary">Annuler</button>
+                        
+                    </form>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </p>
+    </div>
+</div>

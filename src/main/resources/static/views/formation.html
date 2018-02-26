@@ -1,0 +1,68 @@
+
+<br> <br> <br> <br>  <div >
+
+		<div class=" float-right"  >
+		  <button ng-click="changeLanguage('en')">English</button>
+		  <button ng-click="changeLanguage('fr')">Frensh</button>
+		</div>
+		
+	 <br><br>
+<div class="card">
+		<div class="card-header">
+				<i class="fa fa-bars"></i>
+				<span translate="TITLE"></span> 
+				<a ui-sref="ajouterFormation()" class="btn btn-danger float-right">
+						ajouter</a>	
+		</div>
+		<div class="card-body">
+		  <h5 class="card-title"></h5>
+		  <p class="card-text"><table id="formations" class="table table-striped table-bordered" cellspacing="0" width="100%">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>Nom Formation</th>
+						<th>N° Année</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="formation in formations">
+						<td>{{formation.codeFormation}}</td>
+						<td>{{formation.nomFormation}}</td>
+						<td>{{formation.n0Annee}}</td>
+						<td>
+			
+							<a ui-sref="afficheFormation({id: formation.codeFormation})" class="btn btn-info">
+								<div style="font-size:1em">
+									<i class="fa fa-question-circle"></i>
+								</div>
+							</a>
+							<button ui-sref="updateFormation({id: formation.codeFormation})" type="button" class="btn btn-success">
+								<i class="fa fa-edit"></i>
+							</button>
+							<button ng-click="delete(formation.codeFormation)" type="button" class="btn btn-dark">
+								<i class="fa fa-trash"></i>
+							</button>
+			
+						</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<th>#</th>
+						<th>Nom Formation</th>
+						<th>N° Année</th>
+						<th>Actions</th>
+					</tr>
+				</tfoot>
+			</table>
+			</p>
+			</div>
+			
+			</div></p>
+		</div>
+	  </div>
+		
+		
+<br>
+<br>

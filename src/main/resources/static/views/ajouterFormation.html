@@ -1,0 +1,70 @@
+<br> <br> <br><br>
+<div class="card bg-light mb-2">
+    <div class="card-header"></div>
+    <div class="card-body"  >
+
+        <p class="card-text">
+            <div class="row">
+                <div class="col-">
+                </div>
+                <div class="col-11">
+                    <form ng-submit="ajouter()">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="codeFormation">Code Formation &nbsp;&nbsp;</label>
+                                <input ng-model="formation.codeFormation" type="text"required="required" class="form-control" id="codeFormation" placeholder="code Formation">
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="nomFormation">Nom Formation</label>
+                                <input ng-model="formation.nomFormation" type="text" required="required" class="form-control" id="nomFormation" placeholder="nom Formation">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="debutAccreditation">Début Accreditation</label>
+                                <input ng-model="formation.debutAccreditation" type="date"  class="form-control" id="debutAccreditation" placeholder="debutAccreditation">
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="finAccreditation">Fin Accreditation</label>
+                                <input ng-model="formation.finAccreditation" type="date"  class="form-control" id="finAccreditation" placeholder="finAccreditation">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="num">Numéro Année</label>
+                                <select ng-model="formation.n0Annee" type="text" required="required" class="form-control" id="num" placeholder=" Numéro Année">
+                                    <option value="1"> 1</option> 
+                                    <option value="2" selected> 2</option>
+                                    <option value="3" selected>3</option>
+                                    
+                                  </select>                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="num">Diplome</label>
+                                <select ng-model="formation.diplome" type="text" required="required" class="form-control" id="num" placeholder=" Diplome">
+                                    <option value="N"> Licence</option> 
+                                    <option value="M" selected> Master</option>
+                                  </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="num">Double Diplome</label>
+                                <select ng-model="formation.doubleDiplome" type="text" required="required" class="form-control" id="num" placeholder=" Double Diplome">
+                                    <option value="O"> Oui</option> 
+                                    <option value="N" selected> Non</option>
+                                    
+                                  </select>                              </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Ajouter</button>
+                    </form>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </p>
+    </div>
+</div>
+
+
